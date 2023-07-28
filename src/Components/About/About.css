@@ -1,0 +1,33 @@
+.container{
+    margin-top: 10rem;
+}
+.row{
+    margin-top: 10rem;
+}
+.about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.about h1{
+    border-bottom: 5px solid rgb(219, 64, 7);
+   
+}
+.about-content{
+    padding-top: 4rem;
+}
+.about-content h2{
+    font-family: 'Mukta', sans-serif;
+    color: rgb(6, 6, 194);
+    margin-bottom: 2rem;
+}
+.logo{
+    color: hsl(26, 93%, 50%);
+}
+.imges{
+   
+    width: 95%;
+    height: 100%;
+}
+

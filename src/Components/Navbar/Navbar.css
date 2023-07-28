@@ -1,0 +1,111 @@
+
+.navbarSection .header{
+ 
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    width: 100%;
+    padding: 1rem;
+    z-index: 1000;
+}
+.logo h4{
+    display: flex;
+}
+.navbarSection .header .logoDiv .logo{
+    color: hsl(26, 90%, 42%);
+   
+    font-weight: 500;
+    text-decoration: none;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    max-width: 250px;
+}
+.togglenavbar{
+    display: none;
+}
+.closenavbar{
+    display: none;
+}
+
+
+@media (max-width:768px) {
+    .navbarSection .header{
+        position: absolute;
+        top: -7rem;
+    }
+    .navbar{
+        background-color: hsl(0, 0%, 93%);
+        position: absolute;
+        height: 100%;
+        padding: 1rem;
+        width: 100%;
+        top: 0;
+        left: -500%;
+        box-shadow: 0 2px 4px rgba(209, 209, 209,0.904);
+        transition: .5s ease;
+        z-index: 1000;
+
+    }
+    .navbar .navlists{
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        margin: auto;
+    }
+    .navbar .navlists .navitem{
+        padding: 1rem 0;
+        color: hsl (240, 1%, 48%);
+        font-weight: 600;
+
+       
+    }
+    .navbar .navlists .navitem:hover{
+        color: hsl (26, 93%, 50%);
+    }
+   
+ 
+    
+    .togglenavbar{
+        display: flex;
+        left: 0;
+        top: 6rem;
+        /* width: 100%; */
+    }
+    .closenavbar{
+        display: flex;
+    }
+    
+   
+}
+.closenavbar{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    color: hsl(26, 93%, 50%);
+}
+.closenavbar .icon{
+    font-size: 25px;
+    color: hsl(0,0%,100%);
+}
+.closenavbar .icon:hover{
+    color: hsl(26, 90%, 42%);
+}
+.logoDiv .logo .icon{
+    color: hsl (26, 93%, 50%);
+    font-size: 25px;
+   
+}
+.navlink{
+    display: flex;
+    padding-left: 3rem;
+   color: hsl(0,0%,18%);
+   font-weight: 600;
+
+   text-decoration: none;
+}
+.navlink:hover{
+    color: hsl(26, 93%, 50%);
+}
